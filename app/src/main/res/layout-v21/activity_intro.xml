@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="@dimen/double_activity_vertical_margin"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="@dimen/double_activity_vertical_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/logo"
+                android:id="@+id/intro_logo"
+                android:layout_height="100dp"
+                android:contentDescription="@string/imageDescr" />
+
+            <TextView
+                android:text="@string/msgIniziale1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/msgIniziale1"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/card_title"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_username_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:theme="@style/InputSelectedStyle">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/nomeUtente"
+                    android:textSize="16sp"
+                    android:hint="@string/home_text_field" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/InputSelectedStyle"
+                android:layout_marginTop="8dp">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/password"
+                    android:hint="@string/home_pssw_field"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_nome_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/InputSelectedStyle"
+                android:layout_marginTop="8dp">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/nome"
+                    android:hint="@string/home_nome_field"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_cognome_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:theme="@style/InputSelectedStyle">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/cognome"
+                    android:hint="@string/home_cognome_field"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_data_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/InputSelectedStyle"
+                android:layout_marginTop="8dp">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/data"
+                    android:hint="@string/home_data_field" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/register"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/double_activity_vertical_margin"
+                android:text="@string/home_btn_register"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="@string/home_label_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_label"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="14sp"
+                android:textColor="@color/accentColor" />
+        </LinearLayout>
+
+</ScrollView>
+

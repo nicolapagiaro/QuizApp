@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pagiaro.quizapp.QuizActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        tools:context="com.pagiaro.quizapp.QuizActivity"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/info_toolbar"
+        android:fitsSystemWindows="false"
+        style="?attr/bgGeneral">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_below="@+id/n_domanda"
+            android:layout_alignParentStart="true"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/main_toolbar"
+        android:background="@color/accentColor"
+        android:contentInsetLeft="@dimen/zero"
+        android:contentInsetStart="@dimen/zero"
+        app:contentInsetLeft="@dimen/zero"
+        app:contentInsetStart="@dimen/zero"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/toolbar_height">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/indietro"
+                android:drawableStart="@drawable/arrow_left"
+                android:id="@+id/indietro"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avanti"
+                android:drawableEnd="@drawable/arrow_right"
+                android:id="@+id/avanti"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/info_toolbar"
+        android:background="@color/primaryColorDark"
+        android:contentInsetLeft="@dimen/zero"
+        android:contentInsetStart="@dimen/zero"
+        app:contentInsetLeft="@dimen/zero"
+        app:contentInsetStart="@dimen/zero"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ic_timer"
+                android:src="@drawable/ic_timer"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:foregroundGravity="center_vertical"
+                android:contentDescription="@string/imageDescr" />
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/chronometer"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@+id/ic_timer"
+                android:layout_toEndOf="@+id/ic_timer"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="3dp"
+                android:foregroundGravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/n_domanda"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@+id/ic_timer"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="3dp"
+                android:foregroundGravity="center_vertical" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

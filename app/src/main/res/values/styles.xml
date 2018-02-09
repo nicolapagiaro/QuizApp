@@ -1,0 +1,215 @@
+<resources>
+    <attr format="reference" name="cardStyle"/>
+    <attr format="reference" name="primaryTextStyle"/>
+    <attr format="reference" name="secondaryTextStyle"/>
+    <attr format="reference" name="radioButton"/>
+    <attr format="reference" name="bgGeneral"/>
+    <attr format="reference" name="layoutBg"/>
+    <attr format="reference" name="dividerStyle"/>
+    <attr format="reference" name="navigationView"/>
+    <attr format="reference" name="dialogTheme"/>
+    <attr format="reference" name="buttonStyle"/>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="primaryTextStyle">@style/TextPrimary.Light</item>
+        <item name="secondaryTextStyle">@style/TextSecondary.Light</item>
+        <item name="cardStyle">@style/CardView.Light</item>
+        <item name="radioButton">@style/RadioButton.Light</item>
+        <item name="bgGeneral">@style/BgLight</item>
+        <item name="layoutBg">@style/LayoutBackgroundStyleLight</item>
+        <item name="navigationView">@style/NavigationView.Light</item>
+        <item name="android:navigationBarColor">@color/bottomBarColor</item>
+        <item name="android:alertDialogTheme">@style/DialogLight.Alert</item>
+        <item name="dialogTheme">@style/DialogLight.Alert</item>
+        <item name="buttonStyle">@style/ButtonStyle.Light</item>
+        <item name="dividerStyle">@style/DividerLight</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryDarkColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="cardStyle">@style/CardView.Dark</item>
+        <item name="primaryTextStyle">@style/TextPrimary.Dark</item>
+        <item name="secondaryTextStyle">@style/TextSecondary.Dark</item>
+        <item name="bgGeneral">@style/BgDark</item>
+        <item name="layoutBg">@style/LayoutBackgroundStyleDark</item>
+        <item name="radioButton">@style/RadioButton.Dark</item>
+        <item name="buttonStyle">@style/ButtonStyle.Dark</item>
+        <item name="navigationView">@style/NavigationView.Dark</item>
+        <item name="android:navigationBarColor">@color/bottomBarColorDark</item>
+        <item name="android:alertDialogTheme">@style/DialogDark.Alert</item>
+        <item name="dividerStyle">@style/DividerDark</item>
+        <item name="dialogTheme">@style/DialogDark.Alert</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    // tema per l'activity che mostra l'immagine di profilo
+    <style name="MostraImmaginiTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    // Dialog theme
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="background">@color/bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+
+    // TextField, checkboxes and Radio button colors
+    <style name="InputSelectedStyle">
+        <item name="colorControlActivated">@color/accentColor</item>
+        <item name="colorControlNormal">@color/defaultInputColor</item>
+        <item name="android:colorControlActivated">@color/accentColor</item>
+        <item name="android:colorControlNormal">@color/defaultInputColor</item>
+    </style>
+
+    // dialog
+    <style name="DialogLight.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/bg</item>
+        <item name="android:textColorPrimary">@color/primary_textLight</item>
+        <item name="android:textColorSecondary">@color/secondary_textLight</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+    </style>
+
+    <style name="DialogDark.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/primary_textDark</item>
+        <item name="android:textColorSecondary">@color/secondary_textDark</item>
+        <item name="android:background">@color/bgDark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+    </style>
+
+    // navigation view
+    <style name="NavigationView.Light" parent="Widget.Design.NavigationView">
+        <item name="android:background">@color/bg</item>
+        <item name="itemTextColor">@color/primary_textLight</item>
+        <item name="itemIconTint">@color/primary_textLight</item>
+    </style>
+
+    <style name="NavigationView.Dark" parent="Widget.Design.NavigationView">
+        <item name="android:background">@color/bgDark</item>
+        <item name="itemTextColor">@color/primary_textDark</item>
+        <item name="itemIconTint">@color/primary_textDark</item>
+    </style>
+
+    // bg general
+    <style name="BgDark">
+        <item name="android:background">@color/bgDark</item>
+    </style>
+
+    <style name="BgLight">
+        <item name="android:background">@color/bg</item>
+    </style>
+
+    // Linear/relative layout background
+    <style name="LayoutBackgroundStyleLight">
+        <item name="android:background">@color/bgCard</item>
+    </style>
+
+    <style name="LayoutBackgroundStyleDark">
+        <item name="android:background">@color/bgCardDark</item>
+    </style>
+
+    // card view
+    <style name="CardViewStyle.Dark" parent="CardView">
+        <item name="cardBackgroundColor">@color/bgCardDark</item>
+    </style>
+
+    <style name="CardViewStyle.Light" parent="CardView">
+        <item name="cardBackgroundColor">@color/bgCard</item>
+    </style>
+
+    // divider view style
+    <style name="DividerLight">
+        <item name="android:background">@color/dividerLight</item>
+
+    </style>
+
+    <style name="DividerDark" >
+        <item name="android:background">@color/dividerDark</item>
+    </style>
+
+    // Text view Large (PRIMARY TEXT COLOR)
+    <style name="TextPrimary.Light" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/primary_textLight</item>
+    </style>
+
+    <style name="TextPrimary.Dark" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/primary_textDark</item>
+    </style>
+
+    // Text view Medium (SECONDARY TEXT COLOR)
+    <style name="TextSecondary.Light" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/secondary_textLight</item>
+    </style>
+
+    <style name="TextSecondary.Dark" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/secondary_textDark</item>
+    </style>
+
+    // button view
+    <style name="ButtonStyle.Dark" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/primary_textDark</item>
+        <item name="android:drawableTint">@color/primary_textDark</item>
+    </style>
+
+    <style name="ButtonStyle.Light" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/primary_textLight</item>
+        <item name="android:drawableTint">@color/primary_textLight</item>
+    </style>
+
+    // Radiobutton view
+    <style name="RadioButton.Dark" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/primary_textDark</item>
+        <item name="android:textColorSecondary">@color/secondary_textDark</item>
+    </style>
+
+    <style name="RadioButton.Light" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/primary_textLight</item>
+        <item name="android:textColorSecondary">@color/secondary_textLight</item>
+    </style>
+
+
+    // Menu background color for dark themes
+    <style name="OptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/primaryColor</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="RobotoEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

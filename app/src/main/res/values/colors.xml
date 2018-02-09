@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#e0e0e0</color>
+    <color name="defaultInputColor">#9E9E9E</color>
+
+    // default theme
+    <color name="primaryColor">#ef5350</color>
+    <color name="primaryColorDark">#D24946</color>
+    <color name="accentColor">#ef5350</color>
+    <color name="bottomBarColor">#D24946</color>
+    <color name="bgCard">#ffffff</color>
+    <color name="bg">#f5f5f5</color>
+
+    // dark theme
+    <color name="primaryDarkColor">#ef5350</color>
+    <color name="primaryDarkColorDark">#D24946</color>
+    <color name="accentDarkColor">#ef5350</color>
+    <color name="bottomBarColorDark">#D24946</color>
+    <color name="bgCardDark">#263238</color>
+    <color name="bgDark">#37474F</color>
+
+    // text light theme
+    <color name="primary_textLight">#de000000</color>
+    <color name="secondary_textLight">#8a000000</color>
+
+    // text dark theme
+    <color name="primary_textDark">#ffffff</color>
+    <color name="secondary_textDark">#BDBDBD</color>
+
+    <color name="blackText">#212121</color>
+    <color name="textPrimaryLight">#212121</color>
+    <color name="white">#ffffff</color>
+    <color name="dividerLight">#1f000000</color>
+    <color name="dividerDark">#455A64</color>
+    <color name="black">#000000</color>
+
+    // result activity
+    <color name="rispostaCorretta">#43A047</color>
+    <color name="rispostaSbagliata">#E53935</color>
+
+    // classifica
+    <color name="chart1">#FFC107</color>
+    <color name="chart2">#9E9E9E</color>
+    <color name="chart3">#795548</color>
+    <color name="chartAltri">#607D8B</color>
+</resources>

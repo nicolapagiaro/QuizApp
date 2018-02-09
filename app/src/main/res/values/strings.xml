@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+
+    // Stringhe home activity
+    <string name="msgIniziale1">Benvenuto su QuizApp</string>
+    <string name="home_text_field">Username (obbligatorio)</string>
+    <string name="home_pssw_field">Password (obbligatorio)</string>
+    <string name="home_nome_field">Nome</string>
+    <string name="home_cognome_field">Cognome</string>
+    <string name="home_data_field">Data di nascita</string>
+    <string name="home_label_login">Già registrato? Effettua il login</string>
+    <string name="home_btn_register">Registrati</string>
+    <string name="home_btn_login">Accedi</string>
+    <string name="errore1">Immettere minimo 6 caratteri</string>
+    <string name="errore2">Immetti un nome valido</string>
+    <string name="errore3">Immetti un cognome valido</string>
+    <string name="errore5">Immetti una data valida</string>
+    <string name="errore4">Immetti un username valido</string>
+    <string name="errore_register">Nome utente già esistente</string>
+    <string name="errore_login">Nome utente o password errati</string>
+
+    // Stringhe main activity
+    <string name="image_picker">Segli la tua immagine:</string>
+
+    // stringhe MostraImmagini activity
+    <string name="mostraImmaginiTitle">Immagine di profilo</string>
+
+    // Stringhe menu
+    <string name="menu_home">Categorie</string>
+    <string name="menu_classifiche">Classifica</string>
+    <string name="menu_profilo">Profilo utente</string>
+    <string name="menu_impostazioni">Impostazioni</string>
+    <string name="menu_switch">Tema scuro</string>
+    <string name="menu_info">Informazioni</string>
+    <string name="menu_esci">Esci</string>
+    <string name="menu_sfide">Sfide</string>
+    <string name="menu_other">Altro</string>
+    <string name="change_image">Cambia immagine</string>
+
+    // Stringhe quiz activity
+    <string name="n_domanda">Domanda:</string>
+    <string name="imageDescr">image</string>
+    <string name="btnInizia">Inizia</string>
+    <string name="avanti">Avanti</string>
+    <string name="indietro">Indietro</string>
+    <string name="fine">Fine</string>
+
+    // Stringhe result activity
+    <string name="result_label">Risultato</string>
+    <string name="ris">Punteggio:</string>
+    <string name="nome">Nome giocatore:</string>
+    <string name="annuncio_superato_1">Complimenti </string>
+    <string name="annuncio_superato_2">, hai superato il test!</string>
+    <string name="annuncio_non_superato_1">Mi dispiace </string>
+    <string name="annuncio_non_superato_2">, non ha superato il test&#8230;</string>
+    <string name="args">Domande per argomenti:</string>
+    <string name="tempo">Tempo impiegato:</string>
+    <string name="backHome_err">Attendi il salvataggio della partita</string>
+    <string name="salvataggioErr">Partita non salvata, verrà salvata in un momento successivo</string>
+    <string name="minuto">minuto</string>
+    <string name="minuti">minuti</string>
+    <string name="secondo">secondo</string>
+    <string name="secondi">secondi</string>
+
+    // Stringhe Profilo Utente
+    <string name="punteggioView">Punteggio</string>
+    <string name="domandeSvolte">Domande svolte</string>
+    <string name="quizSuperati">Quiz superati</string>
+    <string name="infoText">Informazioni</string>
+    <string name="bestRis">Miglior risultato</string>
+    <string name="allRis">Risultati recenti</string>
+
+    // Stringhe homepage
+    <string name="domandeTot">domande totali</string>
+    <string name="iniziaQuiz">Inizia</string>
+
+    //Stringhe schermata di errore
+    <string name="btn_riprova">Riprova</string>
+
+    // Stringhe dei dialogs
+    <string name="chiudi_dialog">Chiudi</string>
+    <string name="dialog_content_exit">Vuoi veramente uscire dall\'applicazione?</string>
+    <string name="dialog_content_back_home">Vuoi veramente tornare alla schermata principale? I progressi correnti verranno persi.</string>
+    <string name="dialog_action_exit">Esci</string>
+    <string name="dialog_action_back_home">Torna</string>
+    <string name="dialog_action_cancel">Annulla</string>
+    <string name="dialog_content_register">Registrazione in corso</string>
+    <string name="dialog_content_login">Acesso in corso</string>
+    <string name="dialog_content_download">Scaricamento domande</string>
+    <string name="dialog_waiting">Attendere&#8230;</string>
+    <string name="dialog_nointernet_header">Errore</string>
+    <string name="dialog_nointernet">Nessuna connessione a internet disponibile</string>
+    <string name="dialog_nointernetresult">Nessuna connessione a internet disponibile, la partita verrà salvata quando la connessione a internet sarà disponibile</string>
+    <string name="title_dialogDomanda">Domanda nr.</string>
+    <string name="positiva_dialogDomanda">La risposta data è corretta</string>
+    <string name="negativa_dialogDomanda">La risposta data è sbagliata</string>
+    <string name="dialog_infoUtente_title">Dettagli giocatore</string>
+    <string name="dialog_infoUtente_iscritto">Iscritto dal:</string>
+    <string name="dialog_uploadPhoto">Caricamento della foto in corso</string>
+
+    // stringhe toast
+    <string name="doubleClickExit_msg">Premi ancora per uscire</string>
+    <string name="errorUploadPhoto">Errore nel caricamento</string>
+    <string name="errorDownloadDomande">Errore nello scaricamento delle domande</string>
+    <string name="noAccessGallery">Accesso respinto</string>
+
+    // Stringa seconda card nell'activity risultati
+    <string name="results_more">Riepilogo quiz</string>
+
+    // Stringhe chart activity
+    <string name="chart_label">Classifica</string>
+    <string name="point">Punteggio:</string>
+    <string name="scritta_tu">Tu</string>
+
+    // Stringhe error activity
+    <string name="error_label">Correzione errori</string>
+    <string name="rispostaData">Risposta data:</string>
+    <string name="rispostCorretta">Risposta corretta:</string>
+    <string name="rispostaNulla">Nessuna</string>
+
+    // Stringhe about activity
+    <string name="action_about">Informazioni</string>
+    <string name="paggio">Nicola Pagiaro</string>
+    <string name="paggio_desc">Ho sviluppato le classi Java,e mi sono occupato del buon funzionamento dell\'applicazione.</string>
+    <string name="baldo">Francesco Baldan</string>
+    <string name="baldo_desc">Ho curato la grafica dell\'applicazione, i colori e ho creato alcune immagini.</string>
+    <string name="ringraziamenti">Ringraziamenti</string>
+    <string name="ring_ddf">Un ringraziamento al prof. Dalle Fratte che ha introdotto l\'argomento Android in laboratorio.</string>
+    <string name="ring_palma">Un rigraziamento anche al prof. Palmarin per averci dato una mano con le domande relative allo sport.</string>
+    <string name="lib_usate">Librerie usate</string>
+    <string name="picasso">Picasso</string>
+    <string name="picasso_desc">Libreria per la gestione efficiente delle immagini. Senza Picasso l\'applicazione sarebbe probabilmente impallata.</string>
+    <string name="recyclerview_animators">RecyclerView Animators</string>
+    <string name="recyclerview_animators_desc">Carina l\'animazione di scorrimento delle liste, vero? Merito di questa libreria.</string>
+    <string name="roundedimageview">RoundedImageView</string>
+    <string name="roundedimageview_desc">Libreria che permette facilmente di ottenere immagini con gli angoli arrotondati. Indispensabile per posizionare le immagini all\'interno delle card.</string>
+
+    // Stringhe per il drawer
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    // nome per la transizione Homepage/QuizAcivity
+    <string name="transName">immagini</string>
+
+    // Stringhe per i vari errori
+    <string name="errLoading">Caricamento fallito</string>
+    <string name="alreadyDownloading">È già in corso un caricamento</string>
+    <string name="slowLoading">Caricamento lento, attendere prego</string>
+</resources>

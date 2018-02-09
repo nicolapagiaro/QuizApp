@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_homepage"
+                android:icon="@drawable/ic_home_black_24px"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/nav_stats"
+                android:icon="@drawable/ic_insert_chart_black_24dp"
+                android:title="@string/menu_classifiche" />
+
+            <item
+                android:id="@+id/nav_profilo"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="@string/menu_profilo" />
+
+    </group>
+
+    <item android:title="@string/menu_other">
+        <menu>
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@drawable/ic_invert_colors_black_24px"
+                android:title="@string/menu_switch"
+                app:actionLayout="@layout/switch_item" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="@string/menu_info" />
+            <item
+                android:id="@+id/nav_esci"
+                android:icon="@drawable/ic_exit_to_app_black_24px"
+                android:title="@string/menu_esci" />
+        </menu>
+    </item>
+
+</menu>
